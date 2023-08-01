@@ -4,64 +4,453 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link rel="stylesheet" href="style.css">
-    <script src="Week13_JS.js" defer></script>
-    <title>ICA2</title>
+    <script src="ica2.js" defer></script>
+    <title>WebDev Assignment2</title>
 </head>
 
 <body>
-
-    <header>
-        <h1>Main Topic</h1>
-    </header>
-    <nav>
+    <!-- ======= Header NavBar ======= -->
+    <header id="header">
         <button id="hamIcon">Menu</button>
-        <ul>
-            <li><button id="page1btn">Sub Topic 1</button></li>
-            <li><button id="page2btn">Sub Topic 2</button></li>
-            <li><button id="page3btn">Sub Topic 3</button></li>
-        </ul>
-    </nav>
+        <div class="container">
+            <nav id="navbar">
+                <ul>
+                    <li><a class="nav-link scroll-to" href="#Home"> Home</a></li>
+                    <li><a class="nav-link scroll-to" href="#About"> About</a></li>
+                    <li><a class="nav-link scroll-to" href="#Quiz"> Quiz</a></li>
+                    <li><a class="nav-link scroll-to" href="#Contact"> GetHelp</a></li>
+                </ul>
 
-    <div id="pagecontainer">
-
-
-        <div class="page" id="page1">
-            <h2>Sub Topic 1: Introduction to Smoking</h2>
-            <div class="content">
-                <img src="image/Smoking_Intro.jpg">
-                <p>
-                    Smoking is a prevalent habit that involves the inhalation and exhalation of smoke produced by
-                    burning tobacco or other substances. It is a well-known public health concern due to its harmful
-                    effects on individuals and those around them.
-                </p>
-            </div>
+            </nav>
         </div>
+    </header>
+    <!-- ======= Header NavBar End ======= -->
+
+    <!-- ======= Home Section ======= -->
+    <section id="Home">
+        <div class="container" id="#Home">
+            <h1>Smoking is deadly</h1>
+            <h2>Every cigarette you smoke reduces your life by 11 minutes</h2>
+        </div>
+    </section>
+    <!-- ======= Home Section ======= -->
+
+    <!-- ======= About Section ======= -->
+    <section id="About">
+        <div class="container" id="#About">
+            <h2>About Smoking</h2>
+            <p>
+                Smoking is a practice in which individuals inhale and exhale the smoke produced from burning tobacco or
+                other substances. It is primarily associated with the consumption of cigarettes, cigars, pipes, and
+                various tobacco products. Smoking has a long history and has been prevalent in different cultures for
+                centuries.
+            </p>
+            <p>
+                The act of smoking usually involves lighting the tobacco or substance, allowing it to burn, and then
+                inhaling the resulting smoke into the lungs. The smoke contains numerous harmful chemicals, including
+                nicotine, tar, and carbon monoxide, which can have detrimental effects on both the smoker's health and
+                those exposed to secondhand smoke.
+            </p>
+
+            <p>
+                Tobacco product use is started and established primarily during adolescence. Nearly 9 out of 10 adults
+                who smoke cigarettes daily first try smoking by age 18, and 99% first try smoking by age 26.
+            </p>
+
+            <p>
+                There is a steady decline in smoking prevalence in the Singapore population over the years, from 13.9%
+                in
+                2010 to 11.8% in 2017 and 10.1% in 2020.
+            </p>
 
 
-        <div class="page" id="page2">
-            <h2>Sub Topic 2: Health Effects of Smoking</h2>
-            <div class="content">
-                <img src="image/image1.jpg" alt="Image depicting the effects of smoking on the lungs">
-                <p>
-                    Smoking has numerous adverse health effects, both short-term and long-term. It is a major risk
-                    factor for various chronic diseases, including lung cancer, cardiovascular diseases, and respiratory
-                    disorders.
-                </p>
+
+            <nav>
+
+                <ul>
+                    <li><button id="page1btn">History</button><a href="page1"></a></li>
+                    <li><button id="page2btn">Effects</button><a href="page2"></a></li>
+                    <li><button id="page3btn">Types</button><a href="page3"></a></li>
+                    <li><button id="page4btn">Quitting</button><a href="page4"></a></li>
+                </ul>
+            </nav>
+
+            <div id="pagecontainer">
+
+                <!-- ======= About Page1 ======= -->
+                <div class="page" id="page1">
+                    <h2>History</h2>
+                    <img src="image/Smoking_Intro.jpg">
+                    <div class="content">
+
+                        <div class="explanation">
+
+
+                            <p>
+                                Smoking, the act of inhaling and exhaling the smoke produced by burning tobacco or other
+                                substances,
+                                has a long and complex history. The origins of smoking can be traced back thousands of
+                                years to
+                                ancient civilizations.
+                                Here is a brief overview of the history of smoking and how it came about:
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ======= About Page1 End ======= -->
+
+                <!-- ======= About Page2 ======= -->
+                <div class="page" id="page2">
+                    <h2>Health Effects of Smoking</h2>
+                    <div class="content">
+                        <img src="image/image1.jpg" alt="Image depicting the effects of smoking on the lungs">
+
+                        <p>
+                            Smoking has been proven to have numerous detrimental effects on human health. Such as:
+                            "Brain Disease" , "Lung Disease" , "Weaken Bones" , "Heart Disease" , "Gastrointestinal
+                            disease" , "Yellow Teeth" , etc.
+                        </p>
+
+                        <p>
+                            Below are some of the most common health issue faced by smokers.
+                        </p>
+
+
+                        <div class="grid-container">
+
+                            <div class="grid-item grid-item-1">
+                                <h1>Lung Cancer:</h1>
+                                <p>
+                                    Smoking is the leading cause of lung cancer. It damages the cells in the lungs and
+                                    increases
+                                    the risk of developing this deadly disease. The majority of lung cancer cases are
+                                    directly
+                                    attributed to smoking. The risk of having lung cancer increases with the number of
+                                    cigarettes smoked each day and the duration of smoking.
+                                </p>
+                            </div>
+
+                            <div class="grid-item grid-item-2">
+                                <h1>
+                                    Reduced Fertility:
+                                </h1>
+                                <p>
+                                    Smoking has negative effects on both male and female fertility.
+                                </p>
+                                <p>
+                                    In women, it can
+                                    cause fertility issues, complications during pregnancy, and an increased risk of
+                                    miscarriage and
+                                    preterm birth.
+                                </p>
+                                <p>
+                                    In men, smoking can affect sperm quality and reduce fertility.
+                                </p>
+                                <p>
+                                    Reason being, Smoking can negatively affect hormone production. Exposure to tobacco
+                                    smoke can harm the reproductive system as smoking can damage the DNA in people.
+                                </p>
+                            </div>
+
+                            <div class="grid-item grid-item-3">
+                                <h1>
+                                    chronic obstructive <br>pulmonary disease (COPD):
+                                </h1>
+                               
+                                <p>
+                                    The chemicals in cigarette smoke weaken your lungs' defense against infections,
+                                    narrow air passages, cause swelling in air tubes and destroy air sacs-all
+                                    contributing factors for COPD.
+                                </p>
+
+                                <p>
+                                    Symptoms of COPD include: "intense coughing" , "shortness of breath" , "whistling
+                                    sound when you breathe" and "tightness in the chest area".
+                                </p>
+                            </div>
+
+                            <div class="grid-item grid-item-4">
+                                <h1>
+                                    Hearing and Vision Loss:
+                                </h1>
+
+                                <p>
+                                    Smokers are 70% more likely than nonsmokers to develop vision and hearing loss.
+                                </p>
+
+                                <p>
+                                    Smokers are 2 times as likely to develop cataracts, a clouding of the eye's internal
+                                    lens, and a leading cause of blindness; the more someone smokes, the higher the
+                                    chances for cataracts and the earlier in life they are likely to develop.
+                                </p>
+
+                                <p>
+                                    Smoking causes inflammation that could impede blood flow to the cochlea, part of the
+                                    inner ear critical to hearing. In time, this will make it harder to hear
+                                    high-pitched sounds
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- ======= About Page2 End ======= -->
+
+                <!-- ======= About Page3 ======= -->
+                <div class="page" id="page3">
+                    <h2>Various forms of smoking</h2>
+                    <div class="content">
+
+                        <p>
+                            Quitting smoking is a challenging but worthwhile endeavor. It involves breaking free
+                            from
+                            nicotine
+                            addiction and adopting healthier lifestyle choices. There are various strategies and
+                            resources
+                            available to support individuals in their journey towards quitting smoking.
+                        </p>
+
+
+                        <!-- ======= SlideShow ======= -->
+                        <!-- Slideshow container -->
+                        <div class="slideshow-container">
+
+                            <!-- Full-width images with number and caption text -->
+                            <div class="mySlides fade">
+                                <div class="numbertext">1 / 4</div>
+                                <img src="../ICA2/image/img1.jpeg" style="width:100%">
+                                <div class="text">cigarette</div>
+                            </div>
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">2 / 4</div>
+                                <img src="../ICA2/image/img2.jpeg" style="width:100%">
+                                <div class="text">Vape</div>
+                            </div>
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">3 / 4</div>
+                                <img src="../ICA2/image/img3.jpeg" style="width:100%">
+                                <div class="text">Cigar</div>
+                            </div>
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">4 / 4</div>
+                                <img src="../ICA2/image/img4.jpg" style="width:100%">
+                                <div class="text">Shisha</div>
+                            </div>
+
+                            <!-- Next and previous buttons -->
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                        <br>
+
+                        <!-- The dots/circles -->
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+                        </div>
+                        <!-- ======= SlideShow End ======= -->
+
+                    </div>
+                </div>
+                <!-- ======= About Page3 End ======= -->
+
+
+                <!-- ======= About Page4 ======= -->
+                <div class="page" id="page4">
+                    <h2>Quit Smoking</h2>
+                    <div class="content">
+                        <img src="../ICA2/image/QuitSmoking.png">
+
+                        <div class="grid-item">
+                            <h1>Chewing Gum:</h1>
+                            <p>
+                                One of the most useful method in Nicotine Replacement Therapy (NRT) is to chew gum.
+                                Common NRT options include nicotine patches, gum, lozenges, inhalers, and nasal sprays.
+                            </p>
+                        </div>
+
+                        <div class="grid-item">
+                            <h1>Exercise:</h1>
+                            <p>
+                                Engaging in regular physical activity can distract from cravings and release feel-good
+                                endorphins, making it easier to quit smoking.
+                            </p>
+                        </div>
+
+                        <div class="grid-item">
+                            <h1>Behavioral Therapy:</h1>
+                            <p>
+                                This involves working with a counselor or therapist to identify smoking triggers,
+                                develop coping strategies, and change behaviors associated with smoking.
+                            </p>
+                        </div>
+
+
+                    </div>
+                </div>
             </div>
+            <!-- ======= About Page4 End ======= -->
         </div>
-        <div class="page" id="page3">
-            <h2>Sub Topic 3: Quitting Smoking</h2>
-            <div class="content">
-                <img src="image/image1.jpg" alt="Image illustrating a person throwing away cigarettes">
-                <p>
-                    Quitting smoking is a challenging but worthwhile endeavor. It involves breaking free from nicotine
-                    addiction and adopting healthier lifestyle choices. There are various strategies and resources
-                    available to support individuals in their journey towards quitting smoking.
-                </p>
+    </section>
+    <!-- ======= About Section End ======= -->
+
+    <!-- ======= Quiz Section ======= -->
+    <section id="Quiz">
+        <button class="container" id="quiz-container">
+            <h2>Quiz</h2>
+        </button>
+
+
+        <div class="container" id="#Quiz">
+            <h2>Smoking Quiz</h2>
+            <p>In this section, you can add an interactive quiz related to smoking to test your visitors' knowledge.</p>
+            <p>Edit the quiz content and questions to make it informative and enjoyable.</p>
+
+
+            <section id="quiz" style="display: none;">
+                <h2>Quiz</h2>
+                <div id="quiz-questions">
+                    <div class="question">
+                        <p>Question 1: What is the primary addictive substance in cigarettes?</p>
+                        <ul>
+                            <li><label><input type="radio" name="q1" value="a"> Nicotine</label></li>
+                            <li><label><input type="radio" name="q1" value="b"> Tar</label></li>
+                            <li><label><input type="radio" name="q1" value="c"> Carbon Monoxide</label></li>
+                        </ul>
+                    </div>
+                    <div class="question">
+                        <p>Question 2: Which of the following is a long-term effect of smoking?</p>
+                        <ul>
+                            <li><label><input type="radio" name="q2" value="a"> Bad breath</label></li>
+                            <li><label><input type="radio" name="q2" value="b"> Lung cancer</label></li>
+                            <li><label><input type="radio" name="q2" value="c"> Coughing</label></li>
+                        </ul>
+                    </div>
+
+                    <div class="question">
+                        <p>Question 3: What is the term used to describe the harmful smoke that non-smokers may inhale
+                            from someone else's tobacco product?</p>
+                        <ul>
+                            <li><label><input type="radio" name="q3" value="a"> secondhand smoke</label></li>
+                            <li><label><input type="radio" name="q3" value="b"> vapour smoke</label></li>
+                            <li><label><input type="radio" name="q3" value="c"> fresh smoke</label></li>
+                        </ul>
+                    </div>
+
+                    <div class="question">
+                        <p>Question 4: Which age group is most vulnerable to peer pressure and the initiation of
+                            smoking?</p>
+                        <ul>
+                            <li><label><input type="radio" name="q4" value="a"> Teenagers</label></li>
+                            <li><label><input type="radio" name="q4" value="b"> Young adults in their 20s</label></li>
+                            <li><label><input type="radio" name="q4" value="c"> Elderly individuals</label></li>
+                        </ul>
+                    </div>
+
+                    <div class="question">
+                        <p>Question 5: Is there a safe level of smoking?</p>
+                        <ul>
+                            <li><label><input type="radio" name="q5" value="a"> Yes, if you dont do it often</label>
+                            </li>
+                            <li><label><input type="radio" name="q5" value="b"> Yes, smoking is completely safe</label>
+                            </li>
+                            <li><label><input type="radio" name="q5" value="c"> No, there is no safe level</label></li>
+                        </ul>
+                    </div>
+
+                    <div class="question">
+                        <p>Question 6: Which of the following is a long-term effect of smoking?</p>
+                        <ul>
+                            <li><label><input type="radio" name="q6" value="a"> Bad breath</label></li>
+                            <li><label><input type="radio" name="q6" value="b"> Lung cancer</label></li>
+                            <li><label><input type="radio" name="q6" value="c"> Coughing</label></li>
+                        </ul>
+                    </div>
+                    <!-- Add more questions as needed -->
+                </div>
+                <button id="submit-quiz">Submit</button>
+            </section>
+
+            <section id="quiz-results" style="display: none;">
+                <h2>Quiz Results</h2>
+                <div id="score"></div>
+            </section>
+
+
+        </div>
+    </section>
+    <!-- ======= Quiz Section End ======= -->
+
+
+
+
+    <!-- ======= Contact Section ======= -->
+    <div class="contact" id="Contact">
+
+        <button class="container" id="contact-container">
+            <h2>Help:</h2>
+        </button>
+
+        <section id="Contact-content" style="display: none;">
+
+            <div class="container">
+
+                <div> <!--Map of SG-->
+                    <iframe style="border:0; width: 100%; height: 270px;"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.6597556682677!2d103.85277531476927!3d1.2904584923867146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da10470b53ed5f%3A0x9a9f65f14f6515bf!2sSingapore!5e0!3m2!1sen!2s!4v1627359880098"
+                        frameborder="0" allowfullscreen>
+                    </iframe>
+                </div>
+
+
+                <div class="info">
+                    <div class="address">
+
+                        <h4>Location:</h4>
+                        <p>
+                            Johnson & Johnson Pte. Ltd.
+                            2 Science Park Drive
+                            #07-13, Ascent
+                            Singapore Science Park 1
+                            Singapore 118222
+                        </p>
+                    </div>
+
+                    <div class="WebSite">
+
+                        <h4>WebSite:</h4>
+                        <p><a href="https://www.nicorette.com.sg" target="_blank">https://www.nicorette.com.sg</a>
+                        </p>
+                    </div>
+
+                    <div class="phone">
+
+                        <h4>Call:</h4>
+                        <p>800 601 1460 (Toll free)</p>
+                    </div>
+
+                </div>
+
+
+
             </div>
-        </div>
+
+        </section>
     </div>
+    <!-- ======= Contact Section End ======= -->
+
+
+
+
+    <button id="back-to-top-button">Back to Top</button>
 
 </body>
 
