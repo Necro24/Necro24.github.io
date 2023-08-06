@@ -11,7 +11,7 @@ const page4btn = document.querySelector("#page4btn");
 var allpages = document.querySelectorAll(".page");
 
 //select all subtopic pages
-console.log(allpages);
+//console.log(allpages);
 hideall();
 
 function hideall() { //function to hide all pages
@@ -121,12 +121,14 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
-function showSlides(n) {
+function showSlides(n) 
+{
   let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) { slideIndex = 1 }
-  if (n < 1) { slideIndex = slides.length }
+  if (n > slides.length) 
+  { slideIndex = 1; }
+  if (n < 1) { slideIndex = slides.length; }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
@@ -203,6 +205,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //#####################################
 //Quiz-Section-Start
+//Reference: https://simplestepscode.com/javascript-quiz-tutorial/
 //#####################################
 // Get references to the quiz elements
 const quizSection = document.getElementById('quiz');
@@ -234,7 +237,7 @@ function calculateScore() {
   // Display the quiz results
   quizSection.style.display = 'block';
   quizResults.style.display = 'block';
-  scoreDisplay.textContent = `Your score: ${score}/${questions.length}`;
+  scoreDisplay.textContent = `Your score: ${score}/${questions.length}`; //backticks (` `) are used to define a template in JS
 }
 
 //check the correct answer for a given question
@@ -243,9 +246,9 @@ function checkAnswer(questionIndex, selectedValue) {
     'a',
     'b',
     'a',
-    'a',
-    'a',
-    'a',
+    'b',
+    'c',
+    'c',
     // Add more correct answers for subsequent questions
   ];
 
@@ -280,7 +283,8 @@ function checkAnswer(questionIndex, selectedValue) {
 const quizContainer = document.getElementById("quiz-container");
 const quizzSection = document.getElementById("quiz");
 // Add click event listener to the container
-quizContainer.addEventListener("click", () => {
+quizContainer.addEventListener("click", () => 
+{
   // Check the current display state of the contact section
   const isContactSectionVisible = quizzSection.style.display === "block";
 
